@@ -1,8 +1,14 @@
 import React from 'react';
+import ParkingLotItem from './ParkingLotItem';
 
+export default function ParkingLotList({ parkingLotItems }) {
 
-export default function ParkingLotList() {
+  let ParkingLotItemsJsx = parkingLotItems.map( item => <ParkingLotItem />);
+
   return (
-    <div>ParkingLotList</div>
+    <div>
+      ParkingLotList
+      { ParkingLotItemsJsx }
+    </div>
   );
 }
