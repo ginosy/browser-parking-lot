@@ -1,14 +1,15 @@
-import React from 'react';
-import ParkingLotItem from './ParkingLotItem';
+import React from "react";
+import ParkingLotItem from "./ParkingLotItem";
 
 export default function ParkingLotList({ parkingLotItems }) {
-
-  let ParkingLotItemsJsx = parkingLotItems.map( item => <ParkingLotItem />);
+  let ParkingLotItemsJsx = parkingLotItems.map((item) => (
+    <ParkingLotItem key={item.id} {...item} />
+  ));
 
   return (
     <div>
       ParkingLotList
-      { ParkingLotItemsJsx }
+      {ParkingLotItemsJsx}
     </div>
   );
 }
