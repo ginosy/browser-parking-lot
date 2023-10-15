@@ -81,7 +81,7 @@ export default function ParkingLotForm({ addItem }) {
           required
         />
       </FormGroup>
-      <FormGroup className="parking-lot-row">
+      <FormGroup className="parking-lot-row d-flex flex-wrap">
         <Input
           name="radio-priority"
           type="radio"
